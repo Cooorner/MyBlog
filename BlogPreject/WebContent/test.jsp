@@ -22,11 +22,15 @@
 <body>
 	这是第2次在旧的开发分支上添加一行文字
 	babbabbabab
+<<<<<<< .merge_file_a06216
 <<<<<<< HEAD
 	hahahaha这是旧的开发分支
 =======
 	这是在工作流编辑的内容
 >>>>>>> develop
+=======
+	这是在工作流编辑的内容
+>>>>>>> .merge_file_a02820
 	<%request.setCharacterEncoding("utf-8");%>
 	<form action="writeBlog.do" method="post">
         <!-- 加载编辑器的容器 -->
