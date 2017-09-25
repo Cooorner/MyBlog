@@ -37,4 +37,16 @@
     <filter-name>characterEncodingFilter</filter-name>
     <url-pattern>/*</url-pattern>
   </filter-mapping>
+  <!-- Define the pushlet servlet -->  
+    <servlet>  
+        <servlet-name>pushlet</servlet-name>  
+        <servlet-class>nl.justobjects.pushlet.servlet.Pushlet</servlet-class>  
+        <load-on-startup>3</load-on-startup>  
+    </servlet>  
+    <!-- Define the Servlet Mappings. -->  
+    <!-- The pushlet -->  
+    <servlet-mapping>  
+        <servlet-name>pushlet</servlet-name>  
+        <url-pattern>/pushlet.srv</url-pattern>  
+    </servlet-mapping>  
 </web-app>
