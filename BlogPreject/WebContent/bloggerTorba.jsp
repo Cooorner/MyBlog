@@ -19,6 +19,7 @@
 				<li><a href="toBloggerOwn.do">个人主页</a></li>
 				<li><a href="toBloggerLeaveMSg.do">留言</a></li>
 				<li><a href="toAboutMe.do">关于我</a></li>
+				<li><a href="toMyFriends.do">我的好友</a></li>
 				<%} else{%>
 					<li><a href="toBloggerOwn.do">个人主页</a></li>
 					<li><a href="toBloggerLeaveMSg.do">留言</a></li>

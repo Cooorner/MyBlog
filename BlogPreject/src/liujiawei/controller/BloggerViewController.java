@@ -102,4 +102,15 @@ public class BloggerViewController {
 		return "yes";
 	}
 	
+	@RequestMapping("toMyFriends.do")
+    public String toMyFriends(HttpServletRequest request, String username){
+		System.out.println(username+"--进入朋友圈--controller");
+		HttpSession session=request.getSession(); 
+		Blogger currentBlogger=(Blogger)session.getAttribute(BlogAttrs.ATTR_CURRENTBLOGGER);
+		session.setAttribute(BlogAttrs.ATTR_AIMBLOGGER, currentBlogger);
+		//博主访问自己的主页时权限为1
+		currentBlogger.setPermission(1);
+		return "ChatWithMyFriendsView";
+    }
+	
 }

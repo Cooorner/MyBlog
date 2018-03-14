@@ -41,7 +41,7 @@
     <servlet>  
         <servlet-name>pushlet</servlet-name>  
         <servlet-class>nl.justobjects.pushlet.servlet.Pushlet</servlet-class>  
-        <load-on-startup>3</load-on-startup>  
+        <load-on-startup>1</load-on-startup>  
     </servlet>  
     <!-- Define the Servlet Mappings. -->  
     <!-- The pushlet -->  
